@@ -1,0 +1,202 @@
+
+ body {
+  overflow-x: hidden;
+  font-family: 'Shanti', sans-serif;
+}
+
+h1{
+    margin: 1em;
+    text-align: center;
+   color: #0069A3;
+   font-weight: bold;
+}
+
+h2{
+  margin: 1em;
+  text-align: center;
+  color: #5A5B5E;
+  font-weight: bold;
+}
+
+.boderContent{
+    border: #5A5B5E 2px solid;
+    border-radius: 40px;
+    margin: 20px;
+}
+
+.container-fluid{
+  margin: 20px;
+}
+
+.content{
+    text-align: justify;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.contenido{
+  /* Arriba | Derecha | Abajo | Izquierda */
+  margin: 0px 0px 0px 0px;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  background: #FFF;
+  padding: 30px;
+  transition: all 0.5s;
+  box-sizing: border-box;
+}
+
+.sidebar{
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  background: #ECEDEF;
+}
+
+.sidebar ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.sidebar li{
+  transition: all 0.3s;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+
+.sidebar li:hover{
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.sidebar a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu-bar{
+  cursor: pointer;
+}
+
+.open{
+  transform: translateX(250px);
+}
+
+/*Amplia el contenido de la pagina al 100%*/
+.openContent{
+  width: 100%;
+}
+
+.button{
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  border: 1px;
+  background-color: #0069A3;
+}
+
+.titleImageUAM{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  min-height: 50px;
+  max-height: 130px;
+  width: auto;
+}
+
+.titleImageOnda{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  min-width: 80px;
+  max-width: 200px;
+  height: auto;
+  min-height: 100px;
+}
+
+.button:hover{
+  background-color: #FED91C;
+}
+
+.button:active{
+  background-color: #FED91C;
+}
+
+a {
+    color: white;
+  text-decoration-line: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration-line: none;
+}
+
+a:active {
+  color: white;
+  text-decoration-line: none;
+}
+
+
+/* Barra fija */
+.contenidoEstatico {
+position: fixed;
+/* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+right: 0;
+/* Establecemos la barra en la derecha */
+top: 280px;
+/* Bajamos la barra 280px de arriba a abajo */
+z-index: 2000;
+/* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.contenidoEstatico ul {
+list-style: none;
+}
+
+.contenidoEstatico ul li a {
+/*Espacio entre botones*/
+margin: 5px;
+border-radius: 250px;
+display: inline-block;
+color: #fff;
+background: #000;
+padding: 8px 18px;
+text-decoration: none;
+-webkit-transition: all 100ms ease;
+-o-transition: all 100ms ease;
+transition: all 100ms ease;
+/* Establecemos una transición a todas las propiedades */
+}
+
+.contenidoEstatico ul li .icon {
+background: #0069A3;
+}
+
+.contenidoEstatico ul li .icon {
+background: #0069A3;
+}
+
+.contenidoEstatico ul li a:hover {
+background: #FED91C;
+/* Cambiamos el fondo cuando el usuario pase el mouse */
+padding: 10px 20px;
+/* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
+
+@media screen and (min-device-width: 250px) and (max-device-width: 1024px){
+
+  .titleImageUAM{
+    display:none;
+  }
+
+  .titleImageOnda{
+    display: none;
+  }
+
+}
