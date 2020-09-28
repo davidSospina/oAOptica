@@ -58,13 +58,12 @@ h3{
   position: absolute;
   width: 250px;
   min-height: 100%;
-  
 }
 
 .sidebar ul{
   list-style: none;
   padding: 0px;
-  margin-top: 130px;
+  margin-top: 30px;
 }
 
 .sidebar li{
@@ -87,6 +86,7 @@ h3{
 
 .menu-bar{
   cursor: pointer;
+  transform: translateX(0px);
 }
 
 .open{
@@ -165,6 +165,7 @@ top: 280px;
 /* Bajamos la barra 280px de arriba a abajo */
 z-index: 2000;
 /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+margin-right: 20px;
 }
 
 .contenidoEstatico ul {
@@ -221,6 +222,18 @@ padding: 7px 17px;
 
   .sidebar ul{
     margin-top: 50px;
+  }
+  
+  .boderContent{
+    margin: 0px;
+  }
+
+  .content{
+    padding: 5px;
+  }
+
+  .contenidoEstatico{
+    margin-right: 0px;
   }
 
 }
