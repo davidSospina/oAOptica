@@ -1,0 +1,313 @@
+
+body {
+    overflow-x: hidden;
+    font-family: 'Shanti', sans-serif;
+  }
+  
+  h1{
+    margin: 1em;
+    text-align: center;
+    color: #0069A3;
+    font-weight: bold;
+  }
+  
+  h2{
+    margin: 1em;
+    text-align: center;
+    color: #5A5B5E;
+    font-weight: bold;
+  }
+  
+  h3{
+    margin: 1em;
+    text-align: center;
+    color: #5A5B5E;
+    font-weight: bold;
+  }
+  
+  h4{
+    margin: 1em;
+    text-align: center;
+    color: #5A5B5E;
+    font-weight: bold;
+  }
+  
+  .borderContent{
+    border: #5A5B5E 2px solid;
+    border-radius: 40px;
+    margin: 160px 20px 20px 20px;
+    height: 100%;
+  }
+  
+  .content{
+    text-align: justify;
+    font-size: 16px;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  .contenido{
+    /* Arriba | Derecha | Abajo | Izquierda */
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    transition: all 0.5s;
+    box-sizing: border-box;
+  }
+  
+  .encabezado{
+    margin-top: 60px;
+  }
+  
+  nav {
+    margin: 5px;
+    border-radius: 20px;
+    background-color: #fff;
+  }
+  
+  nav ul li .nav-item{
+    margin: 5px;
+    
+  }
+  
+  .feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+  }
+  
+  /*
+   * Sidebar
+   */
+  
+  .sidebar {
+    position: fixed;
+    top: 140px;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 0px; /* Height of navbar */
+    box-shadow: inset 0px 0 0 #818387;
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+  .sidebar .nav-link {
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #fff;
+  }
+  
+  .sidebar .nav-link.active {
+    color: #fff;;
+  }
+  
+  .sidebar .nav-link:hover .feather,
+  .sidebar .nav-link.active .feather {
+    color: inherit;
+  }
+  
+  .sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+  
+  /*
+   * Navbar
+   */
+  
+  .navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    background-color: #0069A3;
+    box-shadow: inset 0px 0 0 #0069A3;
+  }
+  
+  .navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+  }
+  
+  
+  .menu-bar{
+    cursor: pointer;
+    transform: translateX(0px);
+  }
+  
+  .open{
+    transform: translateX(250px);
+  }
+  
+  .icons{
+    font-size: 1.5em;
+  }
+  
+  /*Amplia el contenido de la pagina al 100%
+  .openContent{
+    width: 100%;
+  }*/
+  
+  .button{
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: #0069A3;
+  }
+
+  .buttonTopic{
+      text-align: center;
+  }
+  
+  .titleImageUAM{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    min-height: 40px;
+    max-height: 70px;
+    width: auto;
+  }
+  
+  .titleImageOnda{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-width: 40px;
+    max-width: 110px;
+    height: auto;
+    min-height: 100px;
+  }
+  
+  .button:hover{
+    background-color: #FED91C;
+  }
+  
+  .button:active{
+    background-color: #FED91C;
+  }
+  
+  a {
+    color: white;
+    text-decoration-line: none;
+  }
+  
+  a:hover {
+    color: white;
+    text-decoration-line: none;
+  }
+  
+  a:active {
+    color: white;
+    text-decoration-line: none;
+  }
+  
+  #iconsBulb{
+    padding: 10px 25px;
+  }
+  
+  /* Barra fija */
+  .contenidoEstatico {
+  position: fixed;
+  /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+  right: 0;
+  /* Establecemos la barra en la derecha */
+  top: 280px;
+  /* Bajamos la barra 280px de arriba a abajo */
+  z-index: 2000;
+  /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+  margin-right: 20px;
+  }
+  
+  .contenidoEstatico ul {
+  list-style: none;
+  }
+  
+  .contenidoEstatico ul li a {
+  /*Espacio entre botones*/
+  margin: 5px;
+  border-radius: 250px;
+  display: inline-block;
+  color: #fff;
+  background: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease;
+  -o-transition: all 100ms ease;
+  transition: all 100ms ease;
+  /* Establecemos una transición a todas las propiedades */
+  }
+  
+  .contenidoEstatico ul li .icon {
+  background: #0069A3;
+  }
+  
+  .contenidoEstatico ul li .icon {
+  background: #0069A3;
+  }
+  
+  .contenidoEstatico ul li a:hover {
+  background: #FED91C;
+  /* Cambiamos el fondo cuando el usuario pase el mouse */
+  padding: 7px 15px;
+  /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+  }
+  
+  #iconsBulb:hover{
+    background: #FED91C;
+  /* Cambiamos el fondo cuando el usuario pase el mouse */
+  padding: 7px 20px;
+  /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+  }
+  
+  #paginaActual{
+    background-color: #FED91C
+  }
+  
+  @media screen and (min-device-width: 250px) and (max-device-width: 1024px){
+  
+    .titleImageUAM{
+      display:none;
+    }
+  
+    .titleImageOnda{
+      display: none;
+    }
+  
+    .icons{
+      font-size: 1em;
+    } 
+  
+    .sidebar {
+      margin: 0px;;
+      top: 150px;
+      bottom: auto;
+      padding: 20px 0 0; /* Height of navbar */
+    }
+    
+    .borderContent{
+      margin: 200px 20px 20px 0px;
+    }
+  
+    .content{
+      padding: 5px;
+    }
+  
+    .contenidoEstatico{
+      margin-right: 0px;
+    }
+  
+  }
+  

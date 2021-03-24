@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/objetivos.css">
+    <link rel="stylesheet" href="../css/contenidos.css">
 
     <title>Óptica Física y Geométrica</title>
 
@@ -142,7 +142,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a id="paginaActual" class="nav-link button" href="../pages/objetivos.html">
+                  <a class="nav-link button" href="../pages/objetivos.html">
                     Objetivos
                   </a>
                 </li>
@@ -155,13 +155,13 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a class="nav-link button dropdown-toggle" href="" id="contenidos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a id="paginaActual" class="nav-link button dropdown-toggle" href="" id="contenidos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Contenidos
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="contenidos">
                     <li><a class="dropdown-item" href="../pages/optica.html">La Óptica</a></li>
                     <li><a class="dropdown-item" href="../pages/luz.html">La Luz</a></li>
-                    <li><a class="dropdown-item" href="../pages/propagacion.html">La Propagación</a></li>
+                    <li><a id="paginaActual" class="dropdown-item" href="../pages/propagacion.html">La Propagación</a></li>
                   </ul>
                 </li>
 
@@ -232,37 +232,61 @@
             <div class="col-sm-0 col-md-7 borderContent">
 
                 <div class="col-12">
-                    <h2>Objetivos específcos</h2>
+                    <h2>La propagación</h2>
                 </div>
 
                 <div class="row">
                     <div class="col-12">
                         <div class="content">
                             <div>
+                                Desde el punto de vista de la óptica geométrica, la propagación de la luz se describe mediante un “Rayo de luz” que se origina en un punto de un objeto (emisor de luz) y viaja en línea recta hasta llegar a otro “objeto”.
+                            
+                                <br><br> A continuación se presenta una clasificación de los objetos de acuerdo a su comportamiento frente a la luz. 
+                                <br><br>
+                                <b>Emisores de luz:</b> estrella, filamento incandescente <br>
+                            
+                                <b>Opacos:</b> luna, espejos. <br>
+                            
+                                <b>Transparentes:</b> aire, agua, vidrio  <br>
+                            
+                                <b>Semi-transparentes:</b> líquidos, vidrios de colores  <br><br>
+                                
+                                Cuando se maneja la luz desde el modelo de rayos es importante tener en cuenta la siguiente notación <br><br>
+                            
+                                <b> La normal (n) </b>es la línea perpendicular a la superficie del medio 2 que refleja en el punto de incidencia. <br>
+                            
+                                <b> Ángulo de incidencia (i) </b>es el ángulo formado por la normal y el rayo incidente respecto al punto de contacto entre los dos medios. <br>
+                            
+                                <b> Ángulo de reflexión (R) </b>es el formado por la normal y el rayo reflejado en el punto de contacto entre los dos medios. <br>
+                            
+                                <b> Ángulo de refracción (r) </b>es el formado por la normal y el rayo refractado en el punto de contacto entre los dos medios. <br>
+                            
+                                <h3>Reflexión</h3>
+                            
+                                Es el cambio de dirección de los rayos de luz llegan a un punto de una superficie opaca (rayo incidente).
+                                <br><br>
+                            
+                                <b>Leyes de la reflexión:</b> 
+                            
+                                <br><br>
+                            
+                                Cuando un rayo de luz llega a un punto de una superficie opaca (rayo incidente) ocurre lo siguiente: <br>
+                            
+                                Se refleja de modo tal que el ángulo de incidencia ( i ) y el ángulo de reflexión(  R ) son iguales. <br>
+                            
+                                El rayo incidente, el reflejado y la normal al plano están sobre un mismo plano, el cual es perpendicular a la superficie donde incidió el rayo. <br> <br>
+                            
+                            
+                            
+                                <img src="../images/reflexion_propagacion_1.png" height="50%" width="50%" alt=""><br>
+                                                                <i> <b>Fuente:</b> Elaboración propia</i><br>
+                                </div>
 
-                                <ul class="nav mb-3" id="pills-tab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                      <a class="nav-link button active" id="obj1-tab" data-bs-toggle="pill" data-bs-target="#obj1" type="button" role="button" aria-controls="obj1" aria-selected="true">1</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                      <a class="nav-link button" id="obj2-tab" data-bs-toggle="pill" data-bs-target="#obj2" type="button" role="tab" aria-controls="obj2" aria-selected="false">2</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                      <a class="nav-link button" id="obj3-tab" data-bs-toggle="pill" data-bs-target="#obj3" type="button" role="tab" aria-controls="obj3" aria-selected="false">3</a>
-                                    </li>
-                                  </ul>
-                                  <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane fade show active" id="obj1" role="tabpanel" aria-labelledby="obj1-tab">
-                                        <img src="../images/objetivo-espe-1 si.png" width="100%" alt="Objetivo específico 1">
-                                    </div>
-                                    <div class="tab-pane fade" id="obj2" role="tabpanel" aria-labelledby="obj2-tab">
-                                        <img src="../images/objetivo-espe-2.png" width="100%" alt="Objetivo específico 2">
-                                    </div>
-                                    <div class="tab-pane fade" id="obj3" role="tabpanel" aria-labelledby="obj3-tab">
-                                        <img src="../images/objetivo-espe-3.png" width="100%" alt="Objetivo específico 3">
-                                    </div>
-                                  </div>
-
+                                <div class="buttonTopic">
+                                  <a href="../pages/optica.html" class="button" role="button">La Óptica</a>
+                                  <a href="../pages/luz.html" class="button" role="button">La Luz</a>
+                                </div>
+                            
                             </div>
                         </div>
                     </div>
